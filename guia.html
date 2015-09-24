@@ -1,80 +1,84 @@
-<!-- Este es un comentario en HTML -->
+!-- Esto es un comentario en HTML -->
+
+<!-- Esto es una lista desordenada no enumera los items-->
+<ul>
+	<li>Un elemento</li>
+	<li>Segundo elemento</li>
+	<li>Tercer elemento</li>
+	<li>Cuarto elemento</li>
+</ul>
+
+<!-- Esto es una lista ordenada enumera los items-->
+<ol>
+	<li>Un elemento</li>
+	<li>Segundo elemento</li>
+	<li>Tercer elemento</li>
+	<li>Cuarto elemento</li>
+</ol>
+
+<!-- Esta etiqueta permite agregar textos con caracteres especiales -->
+<meta charset="utf-8">
+
+<!-- Esta etiqueta permite agregar enlaces (al hacer click lleva a otra página)-->
+<a href="www.google.com">Haga click para ir a Google.</a>
+
+<!-- Esta etiqueta permite agregar un parrafo de texto en el el HTML -->
+<p>Todo el texto aquí escrito estará anidado en la etiqueta, la cual al final agregará un espacio entre otros contendos.</p>
+
+<!-- Esta etiqueta permite agregar texto en el HTML -->
+<span>El texto de esta etiqueta no tendrá espacio entre otros elementos a menos que se lo indiquemos.</span>
+
+<!-- Esta etiqueta separará por "secciones" el contenido de nuestro sitio. -->
+<div>Dentro de esta etiqueta puede estar cualquier tipo de etiqueta, ya sea un botón, enlaces, lista o incluso otro div.</div>
 
 <!-- Esta etiqueta encierra TODO el contenido de nuestro archivo HTML -->
-<!DOCTYPE html>
 <html></html>
 
-<!-- Esta etiqueta mantiene la configuración de nuestro archivo HTML, contiene etiquetas meta, estilos, js, descripción, título, favicon, keywords... -->
+<!--
+Esta etiqueta mantiene la configuración de nuestro archivo HTML,
+Como lo son la etiqueta meta para la codificación del texto, lista de estilos css, archivos javascript, descripción de nuestro documento, titulo para el documento que se visualizará en la barra de navegación del navegador, iconos para el sitio, palabras clave para ser indexados por google y algunos otros.
+-->
 <head>
-	<title>Título del sitio</title> <!-- Identifica a la página en el navegador y en los SERPs -->
-	<meta description="Describe el sitio en SERPs">
-	<meta author="Nombre del autor de la página">
+	<title>Titulo del sitio</title>
+	<meta description="Descripción del sitio web.">
+	<meta author="Andrés López">
 	<link rel="icon" type="image/png" href="icono.png">
 </head>
 
-<!-- Esta etiqueta va dentro de la etiqueta HEAD conecta nuestro HTML con la hoja de estilos css -->
-<link rel="stylesheet" href="#.css">
+<!-- Esta etiqueta permite agregar hojas de estilo a nuestro ducmento, la ubicación de los archivos que se agregan se navegan prácticamente que como un "CD" en la terminal, esta etiqueta debería ir en la etiqueta HEAD -->
+<link rel="stylesheet" href="hojaDeEstilos.css">
 
-<!-- Esta etiqueta va dentro de la etiqueta HEAD y contiene estilos css puestos directamente en la página sin conectar hojas de estilo externas (NO recomendado)-->
-<style type="text/css"></style>
+<!--
+Esta etiqueta tendrá dentro contenido CSS, esto debería ir dentro de la etiqueta HEAD.
+-->
+<style>
+	body {
+		border:1px solid red;
+	}
+	div {
+		color:blue;
+	}
+</style>
 
-<!-- Esta etiqueta va dentro de la etiqueta HEAD y permite agregar textos con caracteres especiales -->
-<meta charset="utf-8">
-
-<!--  Esta etiqueta contiene el cuerpo de la página, todo lo visual, div, h1... h6, ul, ol, etc. -->
+<!--
+Esta etiqueta tendrá en su interior todo el contenido en etiquetas como p, ul, li, span, h1...h5 y cualquier otra etiqueta html que representa contenido visual.
+-->
 <body></body>
 
-<!-- Permite hacer "secciones" dentro del contenido -->
+<!-- Esta etiqueta realiza un salto de linea entre el contenido que se encuentre -->
+<br>
 
-<div>Puede contener cualquier otra etiqueta, h1... h6, p, ul, ol, otro div,... O un conjunto de ellas</div>
+<!-- Esta etiqueta agregará una linea de separación en el contenido html que tengamos -->
+<hr>
 
-<!-- Funciona como un div, segmenta por secciones el contenido -->
+<!-- Esta etiqueta agrega texto, pero el texto tiene relevancia semantica dentro del sitio web. La relevancia es semejante al número que acompaña la letra h, siendo 1 el más revelante y 6 el menos relevante. -->
+<h1></h1>
+
+<!-- Esta etiqueta funciona como un div, segmenta por secciones el contenido de nuestro sitio web. -->
 <section></section>
 
-<!-- Funciona como un div, segmenta por secciones, semánticamente aporta valor, es común verla anidada separando secciones dentro de un div o un section-->
+<!-- Esta etiqueta funciona como un div, segmente por secciones, pero es más común verla anidada separando secciones dentro de un div o un section. -->
 <article></article>
 
-<!-- Segmenta el contenido, no tiene mucha relevancia, contiene cosas que no tienen tanta consistencia con el resto del contenido -->
+<!-- esta etiqueta segmentará el contenido deltro del sitio web, se debe tener en cuenta que esta etiqueta no tiene mucha relavancia, en ella podrían ir cosas que no tienen tanta consistencia con el resto del contenido del archivo. -->
 <aside></aside>
-
-<!-- Encabezados. Tienen relevancia semántica siendo 1 lo más relevante y 6 lo menos relevante -->
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<h4></h4>
-<h5></h5>
-<h6></h6>
-
-<!-- Enlaces -->
-<a href="http://www.google.com">Haga click para ir a Google</a>
-
-<!-- Párrafo de texto -->
-<p>Todo el texto que se escriba dentro de esta etiqueta será un párrafo</p>
-
-<!-- Span -->
-<span>Etiqueta complementaria</span>
-
-<!-- Dos tipos de listas, ordenadas (ol) y desordenadas (ul) -->
-
-<ul>
-	<li>Primer ítem</li>
-	<li>Segundo ítem</li>
-	<li>Tercer ítem</li>
-	<li>Cuarto ítem</li>
-</ul>
-
-<ol>
-	<li>Primer ítem</li>
-	<li>Segundo ítem</li>
-	<li>Tercer ítem</li>
-	<li>Cuarto ítem</li>
-</ol>
-
-<!-- Otras etiquetas -->
-
-<br> <!-- salto de línea -->
-
-<hr> <!-- línea de separación -->
-
-
-
