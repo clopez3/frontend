@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700|Raleway);
 html {
 	font-size:16px;
 	height:100%;
@@ -21,33 +22,63 @@ html body img, html body video, html body audio {
 
 .information {
 	border:1px solid green;
+	width:100%;
 }
 .image {
-	border:1px solid blue;
+	/* border:1px solid blue; */
 	display:inline-block;
 	height:200px;
-	width:200px;
+	max-width:200px;
+	overflow:hidden;
+	width:19.53125%;
+}
+.image {
+	width:100%;
 }
 .description {
-	border:1px solid darkblue;
+	/* border:1px solid darkblue; */
 	display:inline-block;
-	margin-left:15px;
+	font-family: 'Raleway', sans-serif;
+	margin-left:1.46484375%;
+	padding:1.25%;
 	vertical-align:top;
-	width:800px;
+	max-width:800px;
+	width:76.171875%;
+}
+.description h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:2em;
+}
+.description p {
+	font-size:1.6em;
+	line-height: 1.5em;
 }
 .sidebar {
-	border:1px solid black;
+	/* border:1px solid black; */
 	display:inline-block;
 	vertical-align:top;
-	width:200px;
+	max-width:200px;
+	width:19.53125%;
 }
 .content {
-	border:1px solid orange;
+	/* border:1px solid orange; */
 	display:inline-block;
-	margin-left:15px;
+	margin-left:1.46484375%;
+	padding:1.25%;
 	vertical-align:top;
-	width:800px;
+	max-width:800px;
+	width:76.171875%;
 }
+.content h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size:1.75em;
+}
+.content p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
 .gallery {
 	display:inline-block;
 }
@@ -92,7 +123,24 @@ html body img, html body video, html body audio {
 	height: 160px;
 	border-radius:100%;
 }
-
+@media all and (max-width:1054px) {
+	.description {
+		display:block;
+		margin:0 auto;
+	}
+	.description h1 {
+		text-align:center;
+		font-size: 2em;
+	}
+	.description p {
+		font-size:1.6em;
+		line-height: 1.5em;
+	}
+	.image {
+		margin:0 auto;
+		display:block;
+	}
+}
 
 
 
